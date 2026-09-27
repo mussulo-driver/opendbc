@@ -536,6 +536,12 @@ class CAR(Platforms):
     chassis_codes={"5F"},
     wmis={WMI.SEAT},
   )
+  SEAT_IBIZA_MK5 = VolkswagenMQBPlatformConfig(
+    [VWCarDocs("SEAT Ibiza 2018-23", footnotes=[Footnote.VW_MQB_A0])],
+    VolkswagenCarSpecs(mass=1140, wheelbase=2.56),
+    chassis_codes={"KJ"},
+    wmis={WMI.SEAT},
+  )
   CUPRA_BORN_MK1 = VolkswagenMEBPlatformConfig(
     [VWCarDocs("CUPRA Born 2021-23", car_parts=CarParts.common([CarHarness.vw_meb]), footnotes=[])],
     VolkswagenCarSpecs(mass=1956, wheelbase=2.766),
